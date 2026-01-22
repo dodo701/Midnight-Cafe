@@ -6,10 +6,10 @@
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'description', content: 'Midnight Cafe에 오신 것을 환영합니다!' },
+      { name: 'description', content: 'Midnight Cafe 디스코드 서버의 공식 웹페이지입니다!' },
       { property: 'og:title', content: 'Midnight Cafe' },
       { property: 'og:image', content: 'https://cheongsaechi.com/midnightcafe.webp' },
-      { property: 'og:description', content: 'Midnight Cafe에 가입하세요!' }
+      { property: 'og:description', content: 'Midnight Cafe 디스코드 서버의 공식 웹페이지입니다!' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
