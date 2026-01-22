@@ -11,7 +11,7 @@
         </div>
         <div class="socials">
           <a href="https://discord.gg/UU9ZMu98Ps">Discord</a>
-          <a href="#">Kakao</a>
+          <a href="https://open.kakao.com/o/gH6chUPh">Kakao</a>
         </div>
       </div>
       <div class="copyright">
