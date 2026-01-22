@@ -1,4 +1,20 @@
 <script setup>
+  import { useHead } from '@unhead/vue';
+
+  useHead({
+    title: 'Midnight Cafe',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'description', content: 'Midnight Cafe에 오신 것을 환영합니다!' },
+      { property: 'og:title', content: 'Midnight Cafe' },
+      { property: 'og:image', content: 'https://cheongsaechi.com/midnightcafe.webp' },
+      { property: 'og:description', content: 'Midnight Cafe에 가입하세요!' }
+    ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    ],
+  })
 </script>
 
 <template>
@@ -7,12 +23,11 @@
       <h1 class="main-title">Midnight <span class="highlight">Cafe</span></h1>
       <p class="subtitle">당신의 이야기가 시작되는 곳.</p>
       <div class="actions">
-        <a href="https://discord.gg/UU9ZMu98Ps" class="btn-primary">가입학기!</a>
-        <a href="#about" class="btn-secondary">둘러보기</a>
+        <a href="https://discord.gg/UU9ZMu98Ps" class="btn-primary">가입하기!</a>
+        <a href="#about" class="btn-secondary">서버 소개</a>
       </div>
     </div>
     <div class="main-visual">
-       <!-- We can add an image or abstract shape here later -->
        <div class="glow-orb"></div>
     </div>
   </section>
@@ -41,17 +56,17 @@
 }
 
 .highlight {
-  color: var(--color-primary);
-  text-shadow: 0 0 20px var(--color-primary);
+  color: var(--color-yellow);
+  text-shadow: 0 0 20px var(--color-yellow);
   animation: neonGlow 2s infinite alternate;
 }
 
 @keyframes neonGlow {
   from {
-    text-shadow: 0 0 20px var(--color-primary);
+    text-shadow: 0 0 20px var(--color-yellow);
   }
   to {
-    text-shadow: 0 0 40px var(--color-primary), 0 0 80px var(--color-accent);
+    text-shadow: 0 0 40px var(--color-yellow), 0 0 80px var(--color-accent);
   }
 }
 
