@@ -14,7 +14,9 @@ const closeMenu = () => {
 
 <template>
   <nav class="navbar">
-    <div class="logo">Midnight Cafe</div>
+    <div class="logo">
+      <img src="/images/78_4.webp" alt="Midnight Cafe" class="logo-img" center />
+    </div>
     
     <!-- Desktop Menu -->
     <div class="menu desktop-menu">
@@ -62,13 +64,14 @@ const closeMenu = () => {
 }
 
 .logo {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 900;
-  color: var(--color-primary);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-shadow: 0 0 10px rgba(176, 38, 255, 0.5);
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
 }
 
 .desktop-menu {

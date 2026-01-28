@@ -1,4 +1,21 @@
 <script setup>
+import { ref, onMounted } from 'vue';
+import axios from 'axios';
+
+const memberCount = ref('900+');
+const onlineCount = ref('200+');
+
+onMounted(async () => {
+  try {
+    const response = await axios.get('https://discord.com/api/invites/Y8dbCSQ5F7?with_counts=true');
+    if (response.data) {
+      memberCount.value = response.data.approximate_member_count;
+      onlineCount.value = response.data.approximate_presence_count;
+    }
+  } catch (error) {
+    console.error('Failed to fetch Discord stats:', error);
+  }
+});
 </script>
 
 <template>
@@ -18,8 +35,12 @@
         </div>
         <div class="stats-grid">
           <div class="stat-card">
-            <h3>900+</h3>
+            <h3>{{ memberCount }}</h3>
             <p>Members</p>
+          </div>
+          <div class="stat-card">
+            <h3>{{ onlineCount }}</h3>
+            <p>Active Members</p>
           </div>
           <div class="stat-card">
             <h3>24/7</h3>

@@ -20,11 +20,13 @@
 <template>
   <section id="Mainpage" class="Mainpage">
     <div class="main-content">
-      <h1 class="main-title">Midnight <span class="highlight">Cafe</span></h1>
+      <div class="main-logo-container">
+        <img src="/images/78.webp" alt="Midnight Cafe" class="main-logo-img" />
+      </div>
       <p class="subtitle">당신의 이야기가 시작되는 곳.</p>
       <div class="actions">
-        <a href="https://discord.gg/UU9ZMu98Ps" class="btn-primary">가입하기!</a>
-        <a href="#about" class="btn-secondary">서버 소개</a>
+        <a href="https://discord.gg/Y8dbCSQ5F7" class="btn-primary">가입하기!</a>
+        <a href="https://disboard.org/ko/server/1454691732795953327" class="btn-secondary">서버 소개</a>
       </div>
     </div>
     <div class="main-visual">
@@ -49,25 +51,17 @@
   z-index: 2;
 }
 
-.main-title {
-  font-size: 5rem;
-  margin-bottom: 1rem;
+.main-logo-container {
+  margin-bottom: 2rem;
   animation: fadeInDown 1s ease-out;
 }
 
-.highlight {
-  color: var(--color-yellow);
-  text-shadow: 0 0 20px var(--color-yellow);
-  animation: neonGlow 2s infinite alternate;
-}
-
-@keyframes neonGlow {
-  from {
-    text-shadow: 0 0 20px var(--color-yellow);
-  }
-  to {
-    text-shadow: 0 0 40px var(--color-yellow), 0 0 80px var(--color-accent);
-  }
+.main-logo-img {
+  max-width: 100%;
+  height: auto;
+  width: 400px; /* Adjust size as needed, or use rem */
+  object-fit: contain;
+  filter: drop-shadow(0 0 20px rgba(176, 38, 255, 0.4));
 }
 
 .subtitle {

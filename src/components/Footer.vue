@@ -10,7 +10,7 @@
           <p>편하게 이야기 나눠봐요!</p>
         </div>
         <div class="socials">
-          <a href="https://discord.gg/UU9ZMu98Ps">Discord</a>
+          <a href="https://discord.gg/Y8dbCSQ5F7">Discord</a>
           <a href="https://open.kakao.com/o/gH6chUPh">Kakao</a>
         </div>
       </div>
